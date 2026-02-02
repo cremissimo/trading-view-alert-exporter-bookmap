@@ -34,7 +34,7 @@ This section explains how to configure TradingView alerts to work with this serv
 1. Open TradingView and navigate to your chart
 2. Click on the three dots of the indicator to add an alert
 
-   ![Create Alert](assets/create-alert.png)
+   ![Create Alert](assets/create_alert.png)
 
 ### Step 2: Configure Alert Frequency
 
