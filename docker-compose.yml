@@ -1,0 +1,20 @@
+
+services:
+  trading-alerts:
+    build: .
+    container_name: trading_view_alerts
+    restart: unless-stopped
+    ports:
+      - "8000:8000"  # HTTP server for CSV files
+    volumes:
+      # Mount logs directory to persist logs
+      - ./logs:/app/logs
+      # Optionally mount .env file if you want to update it without rebuilding
+      - ./.env:/app/.env:ro
+      # Mount Bookmap notes directory
+      # Note: Only required to store the notes in your local filesystem to check them
+      # the notes are served from inside the container
+      - "./notes/cloud:/app/notes"
+      # Mount source code for live editing
+      - ./main.py:/app/main.py
+      - ./src:/app/src

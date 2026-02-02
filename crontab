@@ -1,0 +1,4 @@
+# Run trading view email check every specified time period as appuser
+*/2 * * * * appuser cd /app && /usr/bin/python3 __main__.py >> /app/logs/cron.log 2>&1
+
+# Empty line required at end of cron file
