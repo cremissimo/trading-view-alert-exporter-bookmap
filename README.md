@@ -1,8 +1,10 @@
-# Trading View Export Bookmap
+# Trading View Alert Reader and CSV Exporter to  Bookmap
 
 ## Description
 
 A Python service that automates the processing of TradingView alert emails. It parses Bookmap Cloud Notes CSV payloads from alerts and exports them for local Bookmap Cloud Notes usage. The service runs on a configurable schedule (default: every 5 minutes) and can be deployed locally or via Docker.
+
+![Architecture Diagram](assets/architecture.png)
 
 ## Features
 
