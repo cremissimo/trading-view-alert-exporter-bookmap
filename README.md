@@ -67,13 +67,6 @@ Check that alerts are being triggered in TradingView:
 
 5. In Bookmap, add a cloud notes column and paste the URL to your notes, for example: `http://localhost:8000/ESH6.CME@BMD_STF.csv`
 
-### Troubleshooting TradingView Alerts
-
-- **Alerts not sending**: Verify "Email" is enabled in notification settings
-- **Wrong email received**: Ensure email address matches `EMAIL_USER` in `.env`
-- **Payload not parsing**: Check message format matches expected CSV structure
-- **Frequent alerts**: Adjust alert conditions to reduce false positives
-
 ## Project Structure
 
 ```
