@@ -61,11 +61,18 @@ Check that alerts are being triggered in TradingView:
    docker-compose logs -f
    ```
 
-3. Exported notes will appear in your local cloud notes directory
+## Step 6: Start Python Email Processing Service
 
-4. Access the notes via your configured HTTP server (default: `http://localhost:8000`) to see the exported CSV files
+1. Follow the instructions in the [Quick Start](#quick-start) section below to run the service locally or via Docker
 
-5. In Bookmap, add a cloud notes column and paste the URL to your notes, for example: `http://localhost:8000/ESH6.CME@BMD_STF.csv`
+2. Exported notes will appear in your local cloud notes directory
+
+If you are using Docker the logs are persisted to your local `./logs/cron.log` file
+
+3. Access the notes via your configured HTTP server (default: `http://localhost:8000`) to see the exported CSV files
+
+4. In Bookmap, add a cloud notes column and paste the URL to your notes, for example: `http://localhost:8000/ESH6.CME@BMD_STF.csv`
+
 
 ## Project Structure
 
